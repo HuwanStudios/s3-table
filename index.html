@@ -1,141 +1,94 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-<style>
-body{
-  background-color: #F8F8F8;
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%; 
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #E2FFB8;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 
-<body> 
+<body>
+        <table class="border-collapse border border-slate-400 mx-auto table-auto hover:table-fixed">
+                <!--
+                th stands for table header.
+                td stands for table data.
+                tr stands for table row.
+                -->
 
-	<h2>Sharing Favorite Albums</h2>
-	<table>
+                <!-- Table Uniform Row -->
+            <caption class="border border-slate-300">Sharing Favorite Albums</caption>
+            <thead>
+                <tr>
+                    <th class="border border-slate-300">Album</th>
+                    <th class="border border-slate-300">Artist</th>
+                    <th class="border border-slate-300">Year</th>
+                    <th class="border border-slate-300">Genre</th>
+                    <th class="border border-slate-300">Listening</th>
+                    <th class="border border-slate-300">Country</th>
+                </tr>
+            </thead> 
 
-		<!--
-	
-		th stands for table header.
-		td stands for table data.
-		tr stands for table row.
+            <tbody>
+            <!-- Table Row: 1 -->
+                <tr class="hover:bg-green-100">
+                    <td class="border border-slate-300">Been One</td>
+                    <td class="border border-slate-300">Rylo Rodriguez</td>
+                    <td class="border border-slate-300">2023</td>
+                    <td class="border border-slate-300">HipHop/Rap/Country</td>
+                    <td class="border border-slate-300">Spotify</td>
+                    <td class="border border-slate-300">USA</td>
+                </tr>
 
-		 -->
+                <!-- Table Row: 2 -->
+                <tr class="hover:bg-green-100">
+                    <td class="border border-slate-300">Con Todo El Mundo</td>
+                    <td class="border border-slate-300">Khruangbin</td>
+                    <td class="border border-slate-300">2018</td>
+                    <td class="border border-slate-300">Alternative/Indie</td>
+                    <td class="border border-slate-300">Spotify</td>
+                    <td class="border border-slate-300">Vietnam/USA</td>
+                </tr>
 
-		<!-- Table Uniform Row -->
+                <!-- Table Row: 3 -->
+                <tr class="hover:bg-green-100">
+                    <td class="border border-slate-300">Crocodile Teeth</td>
+                    <td class="border border-slate-300">Skillibeng</td>
+                    <td class="border border-slate-300">2021</td>
+                    <td class="border border-slate-300">Reggae/Dancehall</td>
+                    <td class="border border-slate-300">YouTube</td>
+                    <td class="border border-slate-300">JA</td>
+                </tr>
 
-		<tr style="height:25px">
-			<th>Album</th>
-			<th>Artist</th>
-			<th>Year</th>
-			<th>Genre</th>
-			<th>Listening</th>
-			<th>Country</th>
-		</tr>
+                <!-- Table Row: 4 -->
+                <tr class="hover:bg-green-100">
+                    <td class="border border-slate-300">Wasteland</td>
+                    <td class="border border-slate-300">Brent Faiyaz</td>
+                    <td class="border border-slate-300">2022</td>
+                    <td class="border border-slate-300">Contemporary R&B/Pop</td>
+                    <td class="border border-slate-300">YouTube</td>
+                    <td class="border border-slate-300">USA</td>
+                </tr>
 
-		<!-- Table Row: 1 -->
+                <!-- Table Row: 5 -->
+                <tr class="hover:bg-green-100">
+                    <td class="border border-slate-300">Inna Heigts</td>
+                    <td class="border border-slate-300">Buju Banton</td>
+                    <td class="border border-slate-300">1997</td>
+                    <td class="border border-slate-300">Reggae</td>
+                    <td class="border border-slate-300">iTunes</td>
+                    <td class="border border-slate-300">JA</td>
+                </tr>
 
-		<tr>
-			<td><a href=""Been One</td>
-			<td>Rylo Rodriguez</td>
-			<td>2023</td>
-			<td>HipHop/Rap/Country</td>
-			<td>Spotify</td>
-			<td>USA</td>
-		</tr>
-
-		<!-- Table Row: 2 -->
-
-		<tr>
-			<td>Con Todo El Mundo</td>
-			<td>Khruangbin</td>
-			<td>2018</td>
-			<td>Alternative/Indie</td>
-			<td>Spotify</td>
-			<td>Vietnam/USA</td>
-		</tr>
-
-		<!-- Table Row: 3 -->
-
-		<tr>
-			<td>Crocodile Teeth</td>
-			<td>Skillibeng</td>
-			<td>2021</td>
-			<td>Reggae/Dancehall</td>
-			<td>YouTube</td>
-			<td>JA</td>
-		</tr>
-
-		<!-- Table Row: 4 -->
-
-		<tr>
-			<td>Wasteland</td>
-			<td>Brent Faiyaz</td>
-			<td>2022</td>
-			<td>Contemporary R&B/Pop</td>
-			<td>YouTube</td>
-			<td>USA</td>
-		</tr>
-
-		<!-- Table Row: 5 -->
-
-		<tr>
-			<td>Inna Heigts</td>
-			<td>Buju Banton</td>
-			<td>1997</td>
-			<td>Reggae</td>
-			<td>iTunes</td>
-			<td>JA</td>
-		</tr>
-
-		<!-- Table Row: 6 -->
-
-		<tr>
-			<td>Dying to Live</td>
-			<td>Kodak Black</td>
-			<td>2018</td>
-			<td>HipHop/Rap/Spirituals</td>
-			<td>iTunes</td>
-			<td>Haiti/US</td>
-		</tr>
-
-	</table>
-
- 	<fieldset>
-  	 <legend><h2>Music Platform:</h2></legend>
-	<p>Choose your favorite Music Platform:</p>
-
-	<form>
-  		<input type="radio" id="itunes" name="fav_music" 			value="iTunes">
- 		 <label for="itunes">iTunes</label><br>
- 		 <input type="radio" id="youtube" name="fav_music" 	value="Youtube">
- 		 <label for="youtube">Youtube</label><br>
- 		 <input type="radio" id="spotify" name="fav_music" 			value="Spotify">
- 		 <label for="spotify">Spotify</label>
-	</form>
-	</fieldset>
-
+                <!-- Table Row: 6 -->
+                <tr class="hover:bg-green-100">
+                    <td class="border border-slate-300">Dying to Live</td>
+                    <td class="border border-slate-300">Kodak Black</td>
+                    <td class="border border-slate-300">2018</td>
+                    <td class="border border-slate-300">HipHop/Rap/Spirituals</td>
+                    <td class="border border-slate-300">iTunes</td>
+                    <td class="border border-slate-300">Haiti/US</td>
+                </tr>
+            </tbody>
+        </table>
 </body>
-
 </html>
-
-Github & Gitbash
